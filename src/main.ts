@@ -7,7 +7,7 @@ import { AppModule } from './app.module.js';
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
 async function bootstrap() {
-  const port = process.env.PORT || 5000;
+  const port = 5000;
   const app = await NestFactory.createMicroservice<MicroserviceOptions>(AppModule, {
     transport: Transport.GRPC,
     options: {
